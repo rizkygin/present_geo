@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+
+    <RelativeLayout
+        android:background="@drawable/back_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivLogoAplikasi"
+                android:layout_width="150dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/logoaplikasihigh"
+                android:layout_height="200dp"/>
+            <TextView
+                android:layout_marginTop="100dp"
+                android:id="@+id/tvTitleAplikasi"
+                android:layout_below="@id/ivLogoAplikasi"
+                android:textAlignment="center"
+                android:text="@string/app_name"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

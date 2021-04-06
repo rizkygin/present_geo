@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandingActivity">
+
+    <RelativeLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/map1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_sheet"
+        map:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/top_corner"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="30dp"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <ImageView
+            android:id="@+id/drag"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@android:color/darker_gray"
+            android:background="@drawable/drag_bottom_sheeter"
+            android:layout_width="40dp"
+            android:layout_height="8dp"/>
+        <ImageView
+            android:layout_below="@+id/drag"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <include
+            android:layout_below="@+id/drag"
+            layout="@layout/bottom_sheet_pegawai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

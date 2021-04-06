@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandingAbsenPegawaiActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+    <RelativeLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivCard_nip"
+            android:background="@drawable/card_icon_nip"
+            android:layout_marginTop="40dp"
+            android:paddingTop="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvNip"
+            android:layout_alignBottom="@id/ivCard_nip"
+            android:layout_toRightOf="@id/ivCard_nip"
+            android:text="NIP : "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_below="@id/ivCard_nip"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rParentLn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvTahun"
+                    android:layout_width="60dp"
+                    android:text="2021"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvInstansiLn"
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/tvTahun"
+                    android:textColor="@android:color/white"
+                    android:text="memuat . . ."
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/divLn1"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/tvInstansiLn"
+                    android:background="@android:color/darker_gray"
+                    android:layout_height="1dp"/>
+                <RelativeLayout
+                    android:layout_below="@id/divLn1"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivClockdateLn"
+                        android:background="@drawable/clockdate"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvDate"
+                        android:layout_toRightOf="@id/ivClockdateLn"
+                        android:layout_width="match_parent"
+                        android:text=". . ."
+                        android:layout_alignBottom="@id/ivClockdateLn"
+                        android:layout_alignTop="@id/ivClockdateLn"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@android:color/white"
+                        android:layout_height="wrap_content"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvJustStatusLn"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tvDate"
+                        android:text="STATUS"
+                        android:textColor="@android:color/white"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:id="@+id/ivClockInLn"
+                        android:background="@drawable/clock_in"
+                        android:layout_width="20dp"
+                        android:layout_below="@id/tvJustStatusLn"
+                        android:layout_marginLeft="22dp"
+                        android:layout_height="15dp"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvLabelMasukLn"
+                        android:layout_width="100dp"
+                        android:layout_toRightOf="@id/ivClockInLn"
+                        android:textColor="@android:color/white"
+                        android:text="Masuk"
+                        android:layout_alignTop="@id/ivClockInLn"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="25dp"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvMasukLn"
+                        android:layout_width="match_parent"
+                        android:text=": . . ."
+                        android:textColor="@android:color/white"
+                        android:layout_alignTop="@id/tvLabelMasukLn"
+                        android:layout_toRightOf="@id/tvLabelMasukLn"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/ivCheckVerifiedLn"
+                        android:background="@drawable/verified"
+                        android:layout_alignTop="@id/tvLabelMasukLn"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+
+                        />
+                    <ImageView
+                        android:id="@+id/ivClockOutLn"
+                        android:background="@drawable/clock_out"
+                        android:layout_width="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/ivClockInLn"
+                        android:layout_marginLeft="22dp"
+                        android:layout_height="15dp"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvLabelPulangLn"
+                        android:layout_width="100dp"
+                        android:layout_toRightOf="@id/ivClockInLn"
+                        android:textColor="@android:color/white"
+                        android:text="Pulang"
+                        android:layout_alignTop="@id/ivClockOutLn"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="25dp"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvPulangLn"
+                        android:layout_width="match_parent"
+                        android:text=": . . ."
+                        android:textColor="@android:color/white"
+                        android:layout_alignTop="@id/tvLabelPulangLn"
+                        android:layout_toRightOf="@id/tvLabelPulangLn"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+
+                        android:id="@+id/ivCheckVerified1Ln"
+                        android:visibility="gone"
+                        android:background="@drawable/verified"
+                        android:layout_alignTop="@id/tvLabelPulangLn"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+
+                        />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/ivClockOutLn"
+                        android:layout_marginTop="50dp"
+                        android:text="Keterangan :"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:id="@+id/tvLabelKeteranganLn"
+                        android:layout_height="wrap_content"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/tvLabelKeteranganLn"
+                        android:textColor="@android:color/white"
+                        android:text="memuat . . ."
+                        android:id="@+id/tvKeteranganLn"
+                        android:minHeight="100dp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabAbasen"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Absensi"
+        app:cornerRadius="15dp"
+        app:iconPadding="10dp"
+        app:iconTint="@android:color/white"
+        android:textColor="@android:color/white"
+        app:icon="@drawable/ic_baseline_assignment_ind_24"
+        android:layout_height="50dp"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        />
+</RelativeLayout>

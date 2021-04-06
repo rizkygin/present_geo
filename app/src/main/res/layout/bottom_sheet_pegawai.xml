@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvWarn"
+        android:layout_alignParentTop="true"
+        android:textSize="11dp"
+        android:textStyle="italic"
+        android:textColor="@android:color/white"
+        android:text="Akan absen menggunakan akun ini ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvName"
+        android:layout_below="@id/tvWarn"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="Rizky Kurniawan"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_below="@id/tvName"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tvAction"
+        android:text="Action"
+        android:textSize="11dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/tvName"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.button.MaterialButton
+        android:minWidth="150dp"
+        android:id="@+id/btnLogout"
+        android:layout_below="@id/tvAction"
+        android:backgroundTint="#b02828"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white"
+        android:text="logout"
+        android:layout_width="wrap_content"
+        android:minHeight="30dp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSendLoc"
+        android:layout_width="wrap_content"
+        android:minHeight="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/btnLogout"
+        android:layout_alignBottom="@id/btnLogout"
+        android:minWidth="150dp"
+        android:text="ABSEN"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/bg_food"
+        android:textColor="@color/cardview_light_background"
+        style="@style/Widget.MaterialComponents.Button"
+        />
+
+</RelativeLayout>

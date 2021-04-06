@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0f0c60</color>
+    <color name="colorPrimaryDark">#151F52</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="my_app_primary_color">#FFC107</color>
+    <color name="my_app_secondary_color">#F2F8FF</color>
+    <color name="my_app_background_color">#FBFDFF</color>
+    <color name="my_app_error_color">#B50027</color>
+
+
+    <color name="my_app_primary_variant_color">#AADAFF</color>
+    <color name="my_app_surface_color">#F2F8FF</color>
+    <color name="my_app_secondary_variant_color">#263F45</color>
+    <color name="my_app_color_on_primary">#263F45</color>
+    <color name="my_app_color_on_secondary">#263F45</color>
+    <color name="my_app_color_on_error">#263F45</color>
+    <color name="my_app_color_on_background">#263F45</color>
+    <color name="my_app_color_on_surface">#263F45</color>
+    <color name="my_app_button_clicked">#263F45</color>
+    <color name="bg_food">#FBAE17</color>
+    <color name="warning">#FFC107</color>
+    <color name="warning_high">#B5390C</color>
+    <color name="bg_hotel">#F876B8</color>
+    <color name="bg_souvenir">#00A99D</color>
+    <color name="bg_recommended">#AF002A</color>
+</resources>
